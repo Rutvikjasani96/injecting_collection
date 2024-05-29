@@ -18,5 +18,6 @@ public class App
         System.out.println("mobile numbers : "+emp1.getMobile());
         System.out.println("Addresses : "+emp1.getAddresses());
         System.out.println("Courses with Duration : "+emp1.getCourses());
+        System.out.println("Achievements : "+emp1.getAchievements());
     }
 }

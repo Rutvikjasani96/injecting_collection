@@ -35,6 +35,13 @@
                 <entry key="C" value="1 Months"/>
             </map>
         </property>
+        <property name="achievements">
+            <props>
+                <prop key="Bronze">2</prop>
+                <prop key="Silver">1</prop>
+                <prop key="Gold">0</prop>
+            </props>
+        </property>
     </bean>
 
 </beans>

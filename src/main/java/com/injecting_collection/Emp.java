@@ -2,6 +2,7 @@ package com.injecting_collection;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
 
 public class Emp {
@@ -9,6 +10,7 @@ public class Emp {
     private List<String> mobile;
     private Set<String> addresses;
     private Map<String, String> courses;
+    private Properties achievements;
 
 //    Getters
     public String getName() {
@@ -27,7 +29,11 @@ public class Emp {
         return courses;
     }
 
-//    Setters
+    public Properties getAchievements() {
+        return achievements;
+    }
+
+    //    Setters
     public void setName(String name) {
         this.name = name;
     }
@@ -44,12 +50,17 @@ public class Emp {
         this.courses = courses;
     }
 
-//    Constructor
-    public Emp(String name, List<String> mobile, Set<String> addresses, Map<String, String> courses) {
+    public void setAchievements(Properties achievements) {
+        this.achievements = achievements;
+    }
+
+    //    Constructor
+    public Emp(String name, List<String> mobile, Set<String> addresses, Map<String, String> courses, Properties achievements) {
         this.name = name;
         this.mobile = mobile;
         this.addresses = addresses;
         this.courses = courses;
+        this.achievements = achievements;
     }
 
 //    Default Constructor
