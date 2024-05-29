@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    This is our bean-->
+    <bean class= "com.injecting_collection.Emp" name="emp1">
+        <property name="name" value="Rutvik Jasani"/>
+        <property name="mobile">
+            <list>
+                <value>7984507354</value>
+                <value>1234567890</value>
+                <value>0987654321</value>
+            </list>
+        </property>
+        <property name="addresses">
+            <set>
+                <value>Tirupati</value>
+                <value>Yogi nagar</value>
+                <value>Yogi raj</value>
+                <value>shakti vijay</value>
+                <value>Vijay nagar</value>
+                <value>Bhavna Park</value>
+                <value>Patel nagar</value>
+                <value>Shiv darshan</value>
+                <value>Yogi darshan</value>
+                <value>Godavri</value>
+            </set>
+        </property>
+        <property name="courses">
+            <map>
+                <entry key="Java" value="6 Months"/>
+                <entry key="Python" value="4 Months"/>
+                <entry key="C" value="1 Months"/>
+            </map>
+        </property>
+    </bean>
+
+</beans>
